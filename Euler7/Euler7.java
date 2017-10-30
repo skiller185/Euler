@@ -6,9 +6,12 @@ public class Euler7
 	public static void main(String[] args)
 	{
 		int lastPrime = 3;
-		for(int i = 1;i < 10001;i++)
+		for(int i = 1;i < 10001;i++) //from the 2nd to the 10'001st
 		{
-			
+			while(true)
+			{
+				if()
+			}
 		}
 	}
 	
