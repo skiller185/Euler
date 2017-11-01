@@ -5,7 +5,9 @@ public class Euler7
 {
 	public static void main(String[] args)
 	{
-		int lastPrime = 3;
+		System.out.println(2);
+		System.out.println(3);
+      int lastPrime = 3;
 		for(int i = 1;i < 10001;i++) //from the 2nd to the 10'001st prime
 		{
 			int j = lastPrime;
@@ -13,7 +15,10 @@ public class Euler7
 			{
 				j += 2;
 			}
+         lastPrime = j;
+         System.out.println(lastPrime);
 		}
+      System.out.println("The 10'001st prime is " + lastPrime);
 	}
 	
 	public static boolean isPrime(int n) //returns if n is prime
