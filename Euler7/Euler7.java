@@ -1,27 +1,24 @@
 //Anthony Carpenetti
-//When executed, Euler7...
+//When executed, Euler7 calculates and prints the 10'001st prime.
 
 public class Euler7
 {
 	public static void main(String[] args)
 	{
-		System.out.println(2);
-		System.out.println(3);
       int lastPrime = 3;
-		for(int i = 1;i < 10001;i++) //from the 2nd to the 10'001st prime
+		for(int i = 2;i < 10002;i++) //from the index i 2 to 10001
 		{
-			int j = lastPrime;
-			while(!isPrime(j))
-			{
-				j += 2;
-			}
+         int j = lastPrime + 2;
+         while(!isPrime(j))
+         {
+            j += 2;
+         }
          lastPrime = j;
-         System.out.println(lastPrime);
 		}
-      System.out.println("The 10'001st prime is " + lastPrime);
+      System.out.println(lastPrime);
 	}
 	
-	public static boolean isPrime(int n) //returns if n is prime
+	public static boolean isPrime(int n) //returns true if n is prime; returns false if n is not prime
 	{
 		if(n <= 1)
 		{
